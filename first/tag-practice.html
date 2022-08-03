@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>태그 연습하기</title>
+    <style>
+        header {
+            background-color: #383838;
+            border: 1px solid red;
+        }
+
+        /*   > 은 직속 자식 관계를 의미함~!*/
+        /* header > h1 */
+        #white-heading {
+            color: #fff;
+            text-align: center;
+        }
+
+        .red-heading {
+            color: red;
+        }
+
+        nav ul {
+            display: flex;
+
+        }
+
+        /* 동그라미 none, 우측에만 20px씩 띄움.  */
+        nav ul li {
+            list-style: none;
+            margin-right: 20px;
+        }
+
+        .container {
+            display: flex;
+        }
+
+        main {
+            flex: 3;
+            background-color: aqua;
+        }
+
+        aside {
+            flex: 1;
+            background-color: beige;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <!-- 아이디는 고유, 클래스는 중복 가능 -->
+        <h1 id="white-heading">헤더 영역</h1>
+        <h1 class="red-heading">해딩이 두개면?</h1>
+
+
+    </header>
+
+    <!-- ul은 순서가 없는거 , ol은 순서가 있는거. -->
+    <nav>
+        <ul>
+            <li><a href="first.html">첫 번째</a></li>
+            <li><a href="second.html">두 번째</a></li>
+            <li><a href="inner/third.html">세 번째</a></li>
+            <li><a href="inputtest.html">입력 연습</a></li>
+        </ul>
+
+
+    </nav>
+
+    <div class="container">
+
+        <main>
+            <h1 class="red-heading">메인영역</h1>
+            <!-- article은 머리글 -->
+            <article>
+                <h2> 글 내용의 요약 제목 </h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Porro nemo facere id tempore provident quas
+                    repudiandae at sunt perferendis, a eveniet magni eius perspiciatis necessitatibus est consequuntur
+                    nobis corporis sint.</p>
+
+            </article>
+        </main>
+        <aside>사이드 영역</aside>
+    </div>
+
+    <footer>푸터 영역</footer>
+</body>
+
+</html>
