@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+
+    <title>Page title</title>
+
+
+</head>
+
+<body>
+    <button id="startbtn">스탑워치 시작</button>
+</body>
+<script>
+    let startbtn = document.getElementById("startbtn");
+
+    //    setTimeout(function(){
+    //        console.log("3초 후에 출력")
+    // //    }, 3000);  //ms 단위로 시간을 넣어줄 수 있음.
+
+    // let number = 0;
+    // function start(){
+    //     number++;
+    //     console.log(number);
+    // }
+    
+    // setInterval(start, 1000);
+    // var interval = setInterval(function (){
+    //     // number = 0;
+    //     number++;
+    //     console.log(number);
+    // }, 1000);
+
+    
+    // 해당 시간 단위마다 함수를 호출해줌..
+   
+   
+    
+    //버튼을 누르면 0부터 시작하는 스탑워치(정지 없어도 됨)
+
+    startbtn.addEventListener("click", function () {
+        clearInterval(interval);
+      
+        number = 0;
+        
+        var interval = setInterval(function (){
+        // number = 0;
+        number++;
+        console.log(number);
+    }, 1000);
+
+
+    })
+</script>
+
+</html>

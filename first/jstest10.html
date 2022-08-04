@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+
+    <title>Page title</title>
+</head>
+
+<body>
+    <p>방가방가</p>
+</body>
+
+<script>
+    function sum(a, b) {
+        if (a > b) {
+            return a + b; // 다른 타입을 반환하는 함수는 지양할 것.
+        } else {
+            return "b가 a보다 큽니다." // 다른 타입을 반환하는 함수는 지양할 것.
+        }
+    }
+
+
+    function someFunc() {
+        return;
+    }
+
+    let result = sum(30, 20);
+    console.log(result);
+
+    let someResult = someFunc();
+    console.log(someResult);   // return이 없는 함수를 출력하면 undefined가 뜬다.
+</script>
+
+</html>

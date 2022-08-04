@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+
+    <title>Page title</title>
+</head>
+
+<body>
+    <p>방가방가</p>
+</body>
+
+<script>
+    function eat(act){      // 콜백함수.
+        console.log("밥 먹구");
+        act();
+    }
+
+    let sleep = function(){
+        console.log("잠 자기");
+    }
+
+    let study = function(){
+        console.log("공부하기 ");
+    }
+
+    let anotherName = eat;
+    anotherName(sleep);   // 이것도 가능함 
+
+    
+</script>
+</html>

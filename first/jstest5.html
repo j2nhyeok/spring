@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+   
+    <title>Page title</title>
+</head>
+<body>
+    <p>방가방가</p>
+</body>
+<script>
+    if("ㅁㄴㅇㄻㄴㄹ") {
+      console.log("참임");          //값이 있는 문자열은 참. 값이 없는 문자열("")은 거짓임.
+  } else{
+      console.log("거짓임");
+  }
+
+  let result = true? "왼쪽" : "오른쪽";
+  console.log(result);
+
+  let nullish = null ?? "hello";    //??는 왼쪽에 있는 값이 null값이면 오른 쪽 값으로 대체해줌.
+  console.log(nullish);
+
+  console.log("asdf" && "abbb"); // abbb가 찍힘 -> &&연산자는 첫 번째로 false값을 가질 수 있는 값을 찾아냄.?
+                                //  -> 다 참이면 맨 마지막 값 출력
+  console.log(0 && 500); // 0 이 찍힘.
+  
+  console.log("asdf" || null); // asdf가 찍 힘  -> 참으로 판별 될 수 있는 값을 바로 출력함.
+  console.log(0 || null || false); // 다 거짓이면 맨 마지막 값 출력.
+  console.log(0||500);  // 500이 찍힘.
+
+  console.log(!"aaaa");  // false
+  console.log(!0);  //true
+  
+</script>
+</html>

@@ -24,7 +24,13 @@
 
     <form>
         <label for="searchline">검색어</label>
-        <input id="searchline" type="text" name="searchline" placeholder="여기에 검색어 입력해라" />
+        <input 
+        id="searchline" 
+        type="text" 
+        name="searchline" 
+        placeholder="여기에 검색어 입력해라" /
+        required 
+        maxlength="10">  <!--required는 필수적으로 입력  -->
 
         <label>두번째 파람<input type="text" name="param2" /></label>
         <label>  <input type="checkbox" name="lotto" value="1st"/>1번</label>

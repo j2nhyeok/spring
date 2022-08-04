@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+
+    <title>Page title</title>
+</head>
+
+<body>
+    <button id = "mybtn">눌러봐</button>   
+    <input id = "mytext" value = "test 값" />
+    <button id = "printbtn">콘솔 출력하기</button>
+</body>
+<script>
+
+
+
+
+    function myListener(e){
+        
+        console.log(inputText.value);
+    }
+    //mybtn.onclick = myListener;
+   let elem =  document.getElementById("mybtn");
+   elem.addEventListener("click", myListener);
+
+
+   let printbtn = document.getElementById("printbtn");
+   let inputText = document.getElementById("mytext");
+   printbtn.addEventListener("click", function(e){
+       console.log(inputText.value);
+   });
+
+  
+   // text 입력 요소, button 요소를 배치하고
+   // 사용자가 입력한 내용을 콘솔출력하기
+
+</script>
+</html>

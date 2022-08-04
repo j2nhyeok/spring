@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+
+    <title>Page title</title>
+    <style>
+        .red{
+            color:red;
+        }
+    </style>
+
+</head>
+<body>
+    <button id = "move">이동하기</button>   
+    <div id="mydiv"></div>
+    <button id="changebtn">텍스트 변경하기</button>
+    <button id = "color">색깔 변경하기 </button>
+</body>
+<script>
+    document.getElementById("move").addEventListener("click", function(){
+        if(confirm("네이버로 이동하시겠습니까?")){  //확인을 누르면 true.
+            window.location.href = "http://www.naver.com"; // 창 전환 해줌.
+        }
+    }); //아이디가 move인 객체 찾기
+ 
+    let mydiv = document.getElementById("mydiv");
+    let changebtn = document.getElementById("changebtn");
+    let colorbtn = document.getElementById("color");
+    changebtn.addEventListener("click", function(e){
+        //mydiv.innerText = "<strong>텍스트 값을 변경하였습니다.</strong>";  // 텍스트 값만 변경됨.
+        mydiv.innerHTML = "<strong>텍스트 값을 변경하였습니다.</strong>"; // 태그값까지 변경됨.
+
+    })
+
+    color.addEventListener("click", function(e){  //div에 색깔 주기..
+        mydiv.classList.toggle("red");
+           //클래스 값을 땠다 붙혔다 하는 classList
+    })
+</script>
+</html>

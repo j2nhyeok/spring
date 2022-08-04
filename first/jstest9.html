@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+
+    <title>Page title</title>
+</head>
+
+<body>
+    <p>방가방가</p>
+</body>
+
+<script>
+    function params(){
+        for(let i = 0; i < arguments.length; i++){
+            console.log(arguments[i]);
+        }
+    }
+
+
+    params(1,2,3,4,5,6,7,8,9);
+
+
+    function testDefault(a = 10){  //기본값으로 10..을 설정 전달 받을 값이 있으면 전달 받은 값 출력, 
+        console.log(a);
+    }
+
+
+    testDefault(100);
+    testDefault();
+    // let myFunc = function(a, b){  // 변수에 함수 집어넣는거 가능.. 
+    //     console.log(a+b);
+    // }
+    // myFunc(10, 15);   // 함수를 집어넣은 변수를 사용할 때는 무조건 선언 밑에다 사용해야함.
+
+    
+
+
+
+
+    // hello("jinhyeok");
+
+    // function hello(name){    //파라미터 타입 따로 없음. 함수는 실행 순서와 무관하게 먼저 실행됨..
+    //     console.log(name + "님 안뇽");
+    // }
+
+    // hello(0);
+
+    // hello(NaN);
+
+    // hello();   //undefined를 전달함 ..
+
+
+
+    // hello("a", "b", "c");   // 인자가 하나 이므로 제일 앞에것만 출력됨.. "b", "c"도 전달은 됨..
+
+
+</script>
+
+</html>
