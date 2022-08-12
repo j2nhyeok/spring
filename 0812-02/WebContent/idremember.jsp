@@ -21,8 +21,9 @@
 	%>
 	<form action="./login" method="post">
 
-		<input type="text" name="id" value="" /> 
-		<input type="password" name="password" /> <input type="checkbox" name="rememberme" /> 
+	<label>아이디 :<input type="text" name="id" value="" /></label> 
+		<label>비밀번호 :	<input type="password" name="password" /></label>
+	<label>아이디 저장하기	<input type="checkbox" name="rememberme" /></label> 
 		<input type="submit" />
 
 	</form>

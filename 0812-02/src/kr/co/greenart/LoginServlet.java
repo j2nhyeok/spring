@@ -44,7 +44,8 @@ public class LoginServlet extends HttpServlet {
 			}
 			cookie.setMaxAge(60 *60 * 24);
 			
-			response.addCookie(cookie); //만들어진 쿠키는 응답에 담음. ㅋ
+			// 쿠키를 클라이언트로 전송
+			response.addCookie(cookie); 
 			
 			
 			}
