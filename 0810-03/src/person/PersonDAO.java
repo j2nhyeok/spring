@@ -46,16 +46,16 @@ public class PersonDAO {
 		Class.forName("com.mysql.cj.jdbc.Driver");
 
 		Connection conn = null;
-		Statement stmt = null;
+		PreparedStatement stmt = null;
 		ResultSet rs = null;
 		List<Person> list = new ArrayList<>();
 
 		try {
 			conn = DriverManager.getConnection("jdbc:mysql://localhost:3306/person", "root", "root");
-			stmt = conn.createStatement();
 			String sql = "SELECT *  FROM people ";
+			stmt = conn.prepareStatement(sql);
 
-			rs = stmt.executeQuery(sql);
+			rs = stmt.executeQuery();
 
 			while (rs.next()) {
 				String name = rs.getString("name");

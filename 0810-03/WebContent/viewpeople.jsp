@@ -9,10 +9,12 @@
 <title>Insert title here</title>
 </head>
 <body>
-	<c:if test="${ not empty list }">
+
+
+	<c:if test="${ not empty people }">
 		<ul>
-			<c:forEach var="Person" items="${ list }">
-				<li> ${ Person.name } ${ Person.population }</li>
+			<c:forEach var="Person" items="${ people }">
+				<li> ${ Person.name } ${ Person.age }</li>
 				</c:forEach>
 			
 		</ul>

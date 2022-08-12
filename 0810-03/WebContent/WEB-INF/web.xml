@@ -42,12 +42,17 @@
 	<servlet>
 		<servlet-name>RegisterServlet</servlet-name>
 		<servlet-class>person.RegisterServlet</servlet-class>
+		<init-param>
+			<param-name>paramname1</param-name>
+			<param-value>paramvalue1</param-value>
+		</init-param>
+		<load-on-startup>2</load-on-startup>
 	</servlet>
 
 
 	<servlet-mapping>
 		<servlet-name>RegisterServlet</servlet-name>
-		<url-pattern>/register</url-pattern>
+		<url-pattern>/register.do</url-pattern>
 	</servlet-mapping>
 
 	<servlet>
